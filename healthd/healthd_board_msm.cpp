@@ -226,8 +226,8 @@ static void *alarm_thread(void *)
     if (rc < 0)
         goto err;
 
-    /*LOGI("Exit from power off charging, reboot the phone!\n");
-    android_reboot(ANDROID_RB_RESTART, 0, 0);*/
+    LOGI("Exit from power off charging, reboot the phone!\n");
+    android_reboot(ANDROID_RB_RESTART, 0, 0);
 
 err:
     LOGE("Exit from alarm thread\n");
